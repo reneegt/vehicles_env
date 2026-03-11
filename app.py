@@ -45,4 +45,4 @@ if build_scatter:  # si la casilla de verificación está seleccionada
     fig.update_layout(title_text='Relación entre Odómetro y Precio')
 
     # Mostrar el gráfico Plotly
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
