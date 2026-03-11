@@ -16,3 +16,6 @@ o	Uso de st.checkbox para dar control al usuario sobre qué visualizaciones dese
 Ejemplo de flujo de trabajo:
 El usuario ingresa a la aplicación, selecciona la casilla de "Construir un histograma" y el sistema procesa la columna odometer del dataset para mostrar una gráfica de barras interactiva que representa la frecuencia de los vehículos según su recorrido.
 
+Checalo en el siguiente link!:
+
+https://vehicles-env-1i0g.onrender.com
