@@ -1,7 +1,9 @@
+
+
 import plotly.graph_objects as go  # Importación de plotly.graph_objects como go
 import pandas as pd
-import plotly.graph_objects as go  # Importación de plotly.graph_objects como go
 import streamlit as st
+
 
 st.header('Análisis Exploratorio de Datos: Mercado de Vehículos Usados')
 
@@ -29,15 +31,15 @@ if hist_button:
     st.plotly_chart(fig, use_container_width=True)
 
 # crear una casilla de verificación
-build_histogram = st.checkbox('Construir un Diagrama de Dispersion')
+build_scatter = st.checkbox('Construir un Diagrama de Dispersion')
 
-if build_histogram:  # si la casilla de verificación está seleccionada
+if build_scatter:  # si la casilla de verificación está seleccionada
     st.write('Construir un Diagrama de dispersion para la columna odómetro')
 
     # Crear un scatter plot utilizando plotly.graph_objects
     # Se crea una figura vacía y luego se añade un rastro de scatter
-    fig = go.Figure(data=[go.Scatter(x=car_data['odometer'],
-                                     y=car_data['price'], mode='markers')])
+    fig = go.Figure(
+        data=[go.Scatter(x=car_data['odometer'], y=car_data['price'], mode='markers')])
 
     # Opcional: Puedes añadir un título al gráfico si lo deseas
     fig.update_layout(title_text='Relación entre Odómetro y Precio')
